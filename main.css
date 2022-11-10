@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header {
+    background-color: #0A2640;
+    padding: 56px 0 64px 0;
+    position: relative;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    background: #1C3D5B;
+    width: 1293px;
+    height: 1293px;
+    right: -646.5px;
+    top: -789px;
+    border-radius: 1293px;
+    z-index: -1;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header__menu__links {
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__link {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menu__link--button {
+    padding: 8px 40px;
+    background-color: white;
+    color: #0A2640;
+    border-radius: 24px;
+}
+
+.header__info {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__info__text {
+    max-width: 567px;
+}
+
+.info__title {
+    font-family: 'Manrope';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 72px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.info__describe {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #F1F1F1;
+    margin-bottom: 56px;
+}
+
+.info__button {
+    display: inline-block;
+    padding: 16px 56px;
+    border: 2px solid #FFFFFF;
+    border-radius: 56px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.info__button--green {
+    background: #65E4A3;
+    border: 2px solid #69E6A6;
+    color: #0A2640;
+    margin-right: 24px;
+}
+
+.header__gradient {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+    position: relative;
+}
+
+.header__gradient::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(90deg, #0A2640 0%, rgba(10, 38, 64, 0.109375) 31.6%, rgba(10, 38, 64, 0) 72.89%, #0A2640 97.87%);
+}
